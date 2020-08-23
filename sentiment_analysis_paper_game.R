@@ -23,3 +23,6 @@ df %>%
             pos=sum(type_of_sentiment %in% 'pos')/count,
             neu=sum(type_of_sentiment %in% 'neu')/count,
             neg=sum(type_of_sentiment %in% 'neg')/count)
+
+df <- df[,c(1,3,4,5)]
+write_csv(df, 'paper_game_sentiment.csv')
