@@ -8,8 +8,8 @@ Study academic/general opinion about the issue that WHO includes gaming disorder
 # Data Collection
 **Academic Platform**\
 Web of Science, Sciencedirect\
-**News Platform**\
-Google News\
+**News Platform** <- not here\
+Google News
 
 # Text Analysis
 **Morphology Analysis**\
@@ -17,7 +17,7 @@ Tokenization, Removing stopwords, n-gram, Lemmatization\
 **Topic Analysis**\
 LDA topic modelling\
 **Sentiment Analysis**\
-R package, 'sentimentr'\
+R package, 'sentimentr'
 
 # Result
 > There are many studies and news articles having positive persepectives about game.
