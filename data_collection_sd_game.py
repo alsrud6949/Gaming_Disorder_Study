@@ -29,9 +29,10 @@ driver.implicitly_wait(3) # 3초 wait 후
 import pandas as pd
 contents = pd.DataFrame(columns = ["id","paper"])
 
-
-for j in range(1,6):
-    url1="https://www.sciencedirect.com/search?qs=online%20game%20OR%20video%20game%20OR%20mobile%20game%20AND%20NOT%20game%20theory&show=100&sortBy=relevance&articleTypes=FLA&offset={j}00".format(j=j)
+# totally 7 pages
+for j in range(6):
+    url1="""https://www.sciencedirect.com/search?qs=online%20game%20OR%20video%20game%20OR%20mobile%20game%20AND%20
+    NOT%20game%20theory&show=100&sortBy=relevance&articleTypes=FLA&offset={j}00""".format(j=j)
     driver.get(url1) #Sciencedirect(version free for KHU students)
     result = driver.find_element_by_css_selector("div.ResultList.col-xs-24")
     time.sleep(3)
